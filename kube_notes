@@ -1,0 +1,67 @@
+Environment:
+1 master
+1 infra
+3 app (app1, app2, app3)
+
+
+kubectl get pods --all-namespaces -o wide
+
+install docker on all nodes:
+install kubeadm on master: 
+https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+
+Build master:
+kubeadm init --pod-network-cidr=200.0.0.0/16
+
+Your Kubernetes control-plane has initialized successfully!
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+  export KUBECONFIG=/etc/kubernetes/admin.conf
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join 192.168.1.150:6443 --token 8dc3qs.md97sxc5bm7znmzg \
+    --discovery-token-ca-cert-hash sha256:a9008e665075e24b09df2257e0ed33d4aa652f5698c769e1f62ca57375e2261b 
+
+Join other nodes to master using above command:
+Add a "networking" layer, in this case calico.
+
+root@master:~# curl https://docs.projectcalico.org/manifests/calico.yaml -O
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  183k  100  183k    0     0   216k      0 --:--:-- --:--:-- --:--:--  216k
+root@master:~/yaml# kubectl apply -f calico.yaml
+
+Install ingress controller so that it runs on infra nodes using the infra node's IP:
+Documentation:
+https://kubernetes.github.io/ingress-nginx/deploy/
+https://kubernetes.github.io/ingress-nginx/deploy/baremetal/  (see portion on "Via the host network")
+https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/ (see portion on nodeSelector)
+
+steps:
+kubectl label nodes infra componet=infra
+kubectl label nodes app1 componet=app
+kubectl label nodes app2 componet=app
+kubectl label nodes app3 componet=app
+kubectl get nodes --show-labels
+
+curl -O ingress-controller.yaml https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.43.0/deploy/static/provider/baremetal/deploy.yaml
+edit to add 
+	nodeSelector:
+	  componet: infra
+and
+	spec:
+	  hostNetwork: true
+
+kubectl apply ingress-controller.yaml
