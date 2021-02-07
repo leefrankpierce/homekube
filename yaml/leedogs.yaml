@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: leedogs-deployment
+  labels:
+    app: leedogweb
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: leedogweb
+  template:
+    metadata:
+      labels:
+        app: leedogweb
+    spec:
+      containers:
+      - name: leedogcontainer
+        image: leefrankpierce/leedogs:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+          - name: http 
+            containerPort: 8080
+            protocol: TCP
+      nodeSelector:
+        kubernetes.io/os: linux
+        componet: app
+
