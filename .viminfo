@@ -11,28 +11,60 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/infra
+~MSle0~/service
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1612391344,,"wq"
+|2,0,1613175053,,"wq"
+:q
+|2,0,1613175038,,"q"
+:Service
+|2,0,1613174964,,"Service"
+:w
+|2,0,1613174554,,"w"
+:q!
+|2,0,1613169876,,"q!"
+:/service
+|2,0,1613167501,,"/service"
+:9,14co15
+|2,0,1613167133,,"9,14co15"
+:9,14co16
+|2,0,1613167108,,"9,14co16"
+:set number
+|2,0,1613167096,,"set number"
+:9,14co.
+|2,0,1613166939,,"9,14co."
+:/Selector
+|2,0,1612728584,,"/Selector"
+:Selector
+|2,0,1612728580,,"Selector"
+:/componet
+|2,0,1612728460,,"/componet"
+:/app
+|2,0,1612728825,,"/app"
+:/nodeSelector
+|2,0,1612728372,,"/nodeSelector"
+:/Deployment
+|2,0,1612728079,,"/Deployment"
+:/imagePull
+|2,0,1612728005,,"/imagePull"
+:Policy
+|2,0,1612727995,,"Policy"
+:wq 
+|2,0,1612728332,,"wq "
+:deploy
+|2,0,1612727775,,"deploy"
+:/eploy
+|2,0,1612727361,,"/eploy"
 :1
-|2,0,1612391329,,"1"
+|2,0,1612727348,,"1"
 :w 
 |2,0,1612391327,,"w "
-:w
-|2,0,1612391316,,"w"
-:q
-|2,0,1612391284,,"q"
-:q!
-|2,0,1612391203,,"q!"
 :/infra
 |2,0,1612390620,,"/infra"
-:wq 
-|2,0,1612390094,,"wq "
 :/hostNetwork
 |2,0,1612390004,,"/hostNetwork"
 :/hostnetwork
@@ -41,18 +73,30 @@ $
 |2,0,1612389816,,"kkk"
 :/compo
 |2,0,1612389568,,"/compo"
-:/componet
-|2,0,1612389565,,"/componet"
 :/deployment
 |2,0,1612389432,,"/deployment"
-:/eploy
-|2,0,1612388413,,"/eploy"
 :/controller
 |2,0,1612386482,,"/controller"
 :n
 |2,0,1610745699,,"n"
 
 # Search String History (newest to oldest):
+? service
+|2,1,1613167501,,"service"
+? Selector
+|2,1,1612728584,,"Selector"
+? componet
+|2,1,1612728460,,"componet"
+? app
+|2,1,1612728825,,"app"
+? nodeSelector
+|2,1,1612728372,,"nodeSelector"
+? Deployment
+|2,1,1612728079,,"Deployment"
+? imagePull
+|2,1,1612728005,,"imagePull"
+? eploy
+|2,1,1612727361,,"eploy"
 ? infra
 |2,1,1612390620,,"infra"
 ? hostNetwork
@@ -61,12 +105,8 @@ $
 |2,1,1612389997,,"hostnetwork"
 ? compo
 |2,1,1612389568,,"compo"
-? componet
-|2,1,1612389565,,"componet"
 ? deployment
 |2,1,1612389432,,"deployment"
-? eploy
-|2,1,1612388413,,"eploy"
 ? controller
 |2,1,1612386482,,"controller"
 ? @$
@@ -80,302 +120,296 @@ $
 
 # Registers:
 "0	LINE	0
-	        kubernetes.io/os: linux
-|3,0,0,1,1,0,1612389460,"        kubernetes.io/os: linux"
-""1	LINE	0
-	
-|3,1,1,1,1,0,1612391094,""
+	apiVersion: networking.k8s.io/v1beta1
+|3,0,0,1,1,0,1613169513,"apiVersion: networking.k8s.io/v1beta1"
+"1	LINE	0
+	apiVersion: networking.k8s.io/v1
+|3,0,1,1,1,0,1613169622,"apiVersion: networking.k8s.io/v1"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1612391093,""
+	apiVersion: networking.k8s.io/v1beta1
+|3,0,2,1,1,0,1613169523,"apiVersion: networking.k8s.io/v1beta1"
 "3	LINE	0
-	configmap/calico-config created
-	customresourcedefinition.apiextensions.k8s.io/bgpconfigurations.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/bgppeers.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/blockaffinities.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/clusterinformations.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/felixconfigurations.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/globalnetworkpolicies.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/globalnetworksets.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/hostendpoints.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/ipamblocks.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/ipamconfigs.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/ipamhandles.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/ippools.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/kubecontrollersconfigurations.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/networkpolicies.crd.projectcalico.org created
-	customresourcedefinition.apiextensions.k8s.io/networksets.crd.projectcalico.org created
-	clusterrole.rbac.authorization.k8s.io/calico-kube-controllers created
-	clusterrolebinding.rbac.authorization.k8s.io/calico-kube-controllers created
-	clusterrole.rbac.authorization.k8s.io/calico-node created
-	clusterrolebinding.rbac.authorization.k8s.io/calico-node created
-	daemonset.apps/calico-node created
-	serviceaccount/calico-node created
-	deployment.apps/calico-kube-controllers created
-	serviceaccount/calico-kube-controllers created
-	poddisruptionbudget.policy/calico-kube-controllers created
-	
-|3,0,3,1,26,0,1612390429,"configmap/calico-config created","customresourcedefinition.apiextensions.k8s.io/bgpconfigurations.crd.projectcalico.org created","customresourcedefinition.apiextensions.k8s.io/bgppeers.crd.projectcalico.org created","customresourcedefinition.apiextensions.k8s.io/blockaffinities.crd.projectcalico.org created","customresourcedefinition.apiextensions.k8s.io/clusterinformations.crd.projectcalico.org created",>97
-|<"customresourcedefinition.apiextensions.k8s.io/felixconfigurations.crd.projectcalico.org created","customresourcedefinition.apiextensions.k8s.io/globalnetworkpolicies.crd.projectcalico.org created","customresourcedefinition.apiextensions.k8s.io/globalnetworksets.crd.projectcalico.org created","customresourcedefinition.apiextensions.k8s.io/hostendpoints.crd.projectcalico.org created","customresourcedefinition.apiextensions.k8s.io/ipamblocks.crd.projectcalico.org created",>89
-|<"customresourcedefinition.apiextensions.k8s.io/ipamconfigs.crd.projectcalico.org created","customresourcedefinition.apiextensions.k8s.io/ipamhandles.crd.projectcalico.org created","customresourcedefinition.apiextensions.k8s.io/ippools.crd.projectcalico.org created","customresourcedefinition.apiextensions.k8s.io/kubecontrollersconfigurations.crd.projectcalico.org created","customresourcedefinition.apiextensions.k8s.io/networkpolicies.crd.projectcalico.org created",>89
-|<"customresourcedefinition.apiextensions.k8s.io/networksets.crd.projectcalico.org created","clusterrole.rbac.authorization.k8s.io/calico-kube-controllers created","clusterrolebinding.rbac.authorization.k8s.io/calico-kube-controllers created","clusterrole.rbac.authorization.k8s.io/calico-node created","clusterrolebinding.rbac.authorization.k8s.io/calico-node created","daemonset.apps/calico-node created","serviceaccount/calico-node created",>49
-|<"deployment.apps/calico-kube-controllers created","serviceaccount/calico-kube-controllers created","poddisruptionbudget.policy/calico-kube-controllers created",""
+	            servicePort: 443
+|3,0,3,1,1,0,1613169349,"            servicePort: 443"
 "4	LINE	0
-	kubectl label nodes infra componet=infra
-|3,0,4,1,1,0,1612389199,"kubectl label nodes infra componet=infra"
+	            serviceName: kubernetes-dashboard
+|3,0,4,1,1,0,1613169348,"            serviceName: kubernetes-dashboard"
 "5	LINE	0
-	kubectl label nodes infra componet=infra
-|3,0,5,1,1,0,1612389199,"kubectl label nodes infra componet=infra"
+	        - backend:
+|3,0,5,1,1,0,1613169348,"        - backend:"
 "6	LINE	0
-	calico.yaml
-|3,0,6,1,1,0,1612134014,"calico.yaml"
+	      paths:
+|3,0,6,1,1,0,1613169348,"      paths:"
 "7	LINE	0
-	root@master:~/yaml# ls
-|3,0,7,1,1,0,1612134014,"root@master:~/yaml# ls"
+	    http:
+|3,0,7,1,1,0,1613169347,"    http:"
 "8	LINE	0
-	root@master:~# cd yaml
-|3,0,8,1,1,0,1612134013,"root@master:~# cd yaml"
+	  - host: dashboard.pierce.home
+|3,0,8,1,1,0,1613169347,"  - host: dashboard.pierce.home"
 "9	LINE	0
-	root@master:~# mv c*yaml yaml
-|3,0,9,1,1,0,1612134013,"root@master:~# mv c*yaml yaml"
-"-	CHAR	0
-	`
-|3,0,36,0,1,0,1612390594,"`"
+	    k8s-app: dashboard-metrics-scraper
+|3,0,9,1,1,0,1613167575,"    k8s-app: dashboard-metrics-scraper"
+""-	CHAR	0
+	1
+|3,1,36,0,1,0,1613174863,"1"
 
 # File marks:
-'0  1  0  ~/kube_notes
-|4,48,1,0,1612391344,"~/kube_notes"
-'1  1  0  ~/notes*
-|4,49,1,0,1612391284,"~/notes*"
-'2  67  36  ~/kube_notes
-|4,50,67,36,1612391220,"~/kube_notes"
-'3  67  36  ~/kube_notes
-|4,51,67,36,1612391220,"~/kube_notes"
-'4  327  6  ~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml
-|4,52,327,6,1612391203,"~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml"
-'5  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,53,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
-'6  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,54,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
-'7  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,55,330,0,1612390010,"~/yaml/nginx-ingress-controller-to-infra.yaml"
-'8  329  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,56,329,0,1612390010,"~/yaml/nginx-ingress-controller-to-infra.yaml"
-'9  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,57,330,0,1612390010,"~/yaml/nginx-ingress-controller-to-infra.yaml"
+'0  14  25  ~/yaml/kube_dashboard_ingress.yaml
+|4,48,14,25,1613175053,"~/yaml/kube_dashboard_ingress.yaml"
+'1  1  0  ~/yaml/kube_ingress.yaml
+|4,49,1,0,1613175038,"~/yaml/kube_ingress.yaml"
+'2  41  12  ~/yaml/kube_dashboard_deployment.yaml
+|4,50,41,12,1613175027,"~/yaml/kube_dashboard_deployment.yaml"
+'3  14  27  ~/yaml/kube_dashboard_ingress.yaml
+|4,51,14,27,1613174867,"~/yaml/kube_dashboard_ingress.yaml"
+'4  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,52,52,0,1613174852,"~/yaml/kube_dashboard_deployment.yaml"
+'5  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,53,52,0,1613174852,"~/yaml/kube_dashboard_deployment.yaml"
+'6  14  28  ~/yaml/kube_dashboard_ingress.yaml
+|4,54,14,28,1613174565,"~/yaml/kube_dashboard_ingress.yaml"
+'7  14  28  ~/yaml/kube_dashboard_ingress.yaml
+|4,55,14,28,1613174565,"~/yaml/kube_dashboard_ingress.yaml"
+'8  71  42  ~/kube_notes
+|4,56,71,42,1613170656,"~/kube_notes"
+'9  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,57,1,0,1613169876,"~/yaml/kube_dashboard_ingress.yaml"
 
 # Jumplist (newest first):
--'  1  0  ~/kube_notes
-|4,39,1,0,1612391344,"~/kube_notes"
--'  67  36  ~/kube_notes
-|4,39,67,36,1612391287,"~/kube_notes"
--'  1  0  ~/notes*
-|4,39,1,0,1612391284,"~/notes*"
--'  1  0  ~/notes*
-|4,39,1,0,1612391284,"~/notes*"
--'  67  36  ~/kube_notes
-|4,39,67,36,1612391220,"~/kube_notes"
--'  67  36  ~/kube_notes
-|4,39,67,36,1612391220,"~/kube_notes"
--'  327  6  ~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml
-|4,39,327,6,1612391203,"~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml"
--'  327  6  ~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml
-|4,39,327,6,1612391203,"~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml"
--'  327  6  ~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml
-|4,39,327,6,1612391203,"~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml"
--'  327  6  ~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml
-|4,39,327,6,1612391203,"~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml"
--'  49  99  ~/kube_notes
-|4,39,49,99,1612390826,"~/kube_notes"
--'  49  99  ~/kube_notes
-|4,39,49,99,1612390826,"~/kube_notes"
--'  49  99  ~/kube_notes
-|4,39,49,99,1612390826,"~/kube_notes"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml
-|4,39,1,0,1612390616,"~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml
-|4,39,1,0,1612390616,"~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml
-|4,39,1,0,1612390616,"~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml
-|4,39,1,0,1612390616,"~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml"
--'  45  0  ~/kube_notes
-|4,39,45,0,1612390429,"~/kube_notes"
--'  45  0  ~/kube_notes
-|4,39,45,0,1612390429,"~/kube_notes"
--'  45  0  ~/kube_notes
-|4,39,45,0,1612390429,"~/kube_notes"
--'  14  0  ~/kube_notes
-|4,39,14,0,1612390403,"~/kube_notes"
--'  14  0  ~/kube_notes
-|4,39,14,0,1612390403,"~/kube_notes"
--'  14  0  ~/kube_notes
-|4,39,14,0,1612390403,"~/kube_notes"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  22  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,22,1612390094,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  330  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,330,0,1612390057,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,0,1612390010,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,0,1612390010,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,0,1612390010,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,0,1612390010,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,0,1612390010,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,0,1612390010,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,0,1612390010,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  329  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,329,0,1612390010,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  1  0  ~/yaml/nginx-ingress-controller-to-infra.yaml
-|4,39,1,0,1612389960,"~/yaml/nginx-ingress-controller-to-infra.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
--'  406  8  ~/yaml/nginx-ingress-controller.yaml
-|4,39,406,8,1612389830,"~/yaml/nginx-ingress-controller.yaml"
+-'  14  25  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,25,1613175053,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_ingress.yaml
+|4,39,1,0,1613175038,"~/yaml/kube_ingress.yaml"
+-'  1  0  ~/yaml/kube_ingress.yaml
+|4,39,1,0,1613175038,"~/yaml/kube_ingress.yaml"
+-'  41  12  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,41,12,1613175027,"~/yaml/kube_dashboard_deployment.yaml"
+-'  41  12  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,41,12,1613175027,"~/yaml/kube_dashboard_deployment.yaml"
+-'  41  12  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,41,12,1613175027,"~/yaml/kube_dashboard_deployment.yaml"
+-'  41  12  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,41,12,1613175027,"~/yaml/kube_dashboard_deployment.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174961,"~/yaml/kube_dashboard_deployment.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174961,"~/yaml/kube_dashboard_deployment.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174961,"~/yaml/kube_dashboard_deployment.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174961,"~/yaml/kube_dashboard_deployment.yaml"
+-'  14  27  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,27,1613174867,"~/yaml/kube_dashboard_ingress.yaml"
+-'  14  27  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,27,1613174867,"~/yaml/kube_dashboard_ingress.yaml"
+-'  14  27  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,27,1613174867,"~/yaml/kube_dashboard_ingress.yaml"
+-'  14  27  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,27,1613174867,"~/yaml/kube_dashboard_ingress.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174852,"~/yaml/kube_dashboard_deployment.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174852,"~/yaml/kube_dashboard_deployment.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174852,"~/yaml/kube_dashboard_deployment.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174852,"~/yaml/kube_dashboard_deployment.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174852,"~/yaml/kube_dashboard_deployment.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174852,"~/yaml/kube_dashboard_deployment.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174852,"~/yaml/kube_dashboard_deployment.yaml"
+-'  52  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,52,0,1613174852,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  1  0  ~/yaml/kube_dashboard_deployment.yaml
+|4,39,1,0,1613174841,"~/yaml/kube_dashboard_deployment.yaml"
+-'  14  28  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,28,1613174565,"~/yaml/kube_dashboard_ingress.yaml"
+-'  14  28  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,28,1613174565,"~/yaml/kube_dashboard_ingress.yaml"
+-'  14  28  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,28,1613174565,"~/yaml/kube_dashboard_ingress.yaml"
+-'  14  28  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,28,1613174565,"~/yaml/kube_dashboard_ingress.yaml"
+-'  14  28  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,28,1613174565,"~/yaml/kube_dashboard_ingress.yaml"
+-'  14  28  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,28,1613174565,"~/yaml/kube_dashboard_ingress.yaml"
+-'  14  28  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,28,1613174565,"~/yaml/kube_dashboard_ingress.yaml"
+-'  14  28  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,14,28,1613174565,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  1  0  ~/yaml/kube_dashboard_ingress.yaml
+|4,39,1,0,1613174485,"~/yaml/kube_dashboard_ingress.yaml"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
+-'  71  42  ~/kube_notes
+|4,39,71,42,1613170656,"~/kube_notes"
 
 # History of marks within files (newest to oldest):
 
-> ~/kube_notes
-	*	1612391330	0
+> ~/yaml/kube_dashboard_ingress.yaml
+	*	1613175052	0
+	"	14	25
+	^	14	26
+	.	14	25
+	+	14	27
+	+	15	0
+	+	15	16
+	+	19	35
+	+	20	28
+	+	14	25
+
+> ~/yaml/kube_ingress.yaml
+	*	1613175037	0
 	"	1	0
-	^	46	83
-	.	46	82
-	+	71	107
-	+	103	58
-	+	78	0
+
+> ~/yaml/kube_dashboard_deployment.yaml
+	*	1613175026	0
+	"	41	12
+	^	41	13
+	.	41	12
+	+	41	12
+
+> ~/kube_notes
+	*	1613170655	0
+	"	71	42
+	^	71	43
+	.	71	42
+	+	80	107
+	+	112	58
+	+	87	0
 	+	45	0
 	+	45	58
 	+	15	0
@@ -411,14 +445,169 @@ $
 	+	10	24
 	+	67	36
 	+	46	82
+	+	76	29
+	+	75	16
+	+	79	17
+	+	70	117
+	+	71	36
+	+	72	17
+	+	69	89
+	+	78	37
+	+	80	24
+	+	76	35
+	+	71	42
+
+> ~/yaml/leedogs_ingress.yaml
+	*	1613169622	0
+	"	1	0
+	^	1	37
+	.	1	0
+	+	1	0
+
+> ~/yaml/pierce_home_ingress.yaml
+	*	1613169382	0
+	"	1	30
+	^	14	29
+	.	9	0
+	+	5	19
+	+	4	14
+	+	9	0
+	+	9	16
+	+	13	31
+	+	14	28
+	+	9	0
+
+> ~/yaml/leedogs_service.yaml
+	*	1613168035	0
+	"	12	17
+	^	12	18
+	.	12	17
+	+	12	38
+	+	5	15
+	+	6	19
+	+	9	15
+	+	10	21
+	+	12	17
+
+> ~/yaml/leedogs.yaml
+	*	1613168022	0
+	"	13	0
+	^	15	22
+	.	15	21
+	+	22	26
+	+	4	14
+	+	8	12
+	+	15	19
+	+	18	20
+	+	19	36
+	+	22	28
+	+	15	16
+	+	5	2
+	+	6	11
+	+	1	0
+	+	6	14
+	+	15	25
+	+	6	20
+	+	1	19
+	+	25	4
+	+	26	5
+	+	27	5
+	+	25	0
+	+	18	0
+	+	20	36
+	+	23	7
+	+	22	8
+	+	23	9
+	+	22	21
+	+	23	11
+	+	24	24
+	+	25	5
+	+	26	5
+	+	27	5
+	+	11	19
+	+	15	21
+
+> ~/yaml/kube_dashboard.yaml
+	*	1613167543	0
+	"	234	2
+
+> ~/monitor.bash
+	*	1613166791	0
+	"	9	8
+	^	9	9
+	.	9	8
+	+	1	5
+	+	10	41
+	+	13	3
+	+	11	7
+	+	12	0
+	+	7	11
+	+	11	0
+	+	8	28
+	+	9	29
+	+	8	8
+	+	9	8
+
+> ~/yaml/example_ingress.yaml
+	*	1613164453	0
+	"	7	0
+	^	14	12
+	.	7	0
+	+	15	0
+	+	4	24
+	+	5	32
+	+	7	5
+	+	9	30
+	+	13	42
+	+	12	9
+	+	13	10
+	+	14	11
+	+	7	0
+
+> ~/notes
+	*	1613163832	0
+	"	1	0
+
+> ~/.git/COMMIT_EDITMSG
+	*	1612729279	0
+	"	57	0
+	.	57	0
+	+	11	0
+	+	57	0
+
+> ~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml
+	*	1612728651	0
+	"	316	2
+
+> ~/leedogs.yaml
+	*	1612727591	0
+	"	20	4
+	^	22	19
+	.	20	0
+	+	15	28
+	+	6	17
+	+	12	22
+	+	19	8
+	+	22	23
+	+	20	4
+	+	21	4
+	+	22	18
+	+	20	0
+
+> ~/leedogs.yal
+	*	1612726526	0
+	"	1	0
+
+> ~/gittoken
+	*	1612569029	0
+	"	1	0
+	^	1	41
+	.	1	0
+	+	1	0
 
 > ~/notes*
 	*	1612391283	0
 	"	1	0
-
-> ~/yaml/nginx-ingress-controller-to-infra-hostnetwork.yaml
-	*	1612390669	0
-	"	327	6
 
 > ~/yaml/nginx-ingress-controller-to-infra.yaml
 	*	1612390089	0
@@ -475,18 +664,6 @@ $
 	.	53	0
 	+	54	0
 	+	53	0
-
-> ~/monitor.bash
-	*	1612135094	0
-	"	8	11
-	^	7	12
-	.	7	11
-	+	1	5
-	+	8	41
-	+	11	3
-	+	9	7
-	+	10	0
-	+	7	11
 
 > ~/yaml/kube_notes
 	*	1612133992	0

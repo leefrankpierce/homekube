@@ -66,7 +66,15 @@ and
 
 kubectl apply ingress-controller.yaml
 
+Deploy kub-dashboard as an example/test. (note: includes a service in the deployment yaml)
+curl -o kube_dashboard.yaml https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
+kubectl create -f kube_dashboard_deployment.yaml
+kubectl create -f kube_dashboard_ingress.yaml
+
+
 Deploy a web app:
-kubectl create -f leedogs.yaml
+kubectl create -f leedogs_deployment.yaml
 Create a service:
+kubectl create -f leedogs_service.yaml
 Create an ingress:
+kubectl create -f leedogs_ingress.yaml

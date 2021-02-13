@@ -486,3 +486,146 @@ cat kube_notes
 vi notes*
 ls
 vi k*
+ls
+curl ttps://raw.githubusercontent.com/openshift-evangelists/kbe/main/specs/deployments/d09.yaml
+curl https://raw.githubusercontent.com/openshift-evangelists/kbe/main/specs/deployments/d09.yaml
+curl https://raw.githubusercontent.com/openshift-evangelists/kbe/main/specs/services/rc.yaml
+ls
+cd yaml
+vi leedogs.yaml
+ls
+mv leedogs.yaml ..
+cd ..
+ls
+curl  kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+curl  gcr.io/google-samples/kubernetes-bootcamp:v1
+curl https://gcr.io/google-samples/kubernetes-bootcamp:v1
+ls
+vi leedogs.yal
+vi leedogs.yaml
+ls
+cp leedogs.yaml yaml
+cd yaml
+ls
+kubectl create leedogs.yaml 
+kubectl create -f leedogs.yaml 
+ls
+vi leedogs.yaml
+kubectl create -f leedogs.yaml 
+vi leedogs.yaml
+ls
+vi nginx*
+kubectl create -f leedogs.yaml 
+ls
+vi nginx*
+ls
+cat set_labels.bash
+kubectl get nodes --show-labels
+vi nginx*
+cd ..
+ls
+./monitor.bash
+ls
+cat gittoken
+kubectl get deployment
+kubectl get deployment -v
+kubectl describe  deployment 
+ls
+cd yaml
+ls
+cat leedogs.yaml
+ls
+cd ..
+ls
+monitor.bash
+./monitor.bash
+ls
+cd yaml
+ls
+cat nginx-in*
+clear
+cat nginx-in*
+clar
+clear
+view  nginx-in*
+ls
+vi leedogs.yaml
+kubectl create -f leedogs.yaml
+vi leedogs.yaml
+kubectl create -f leedogs.yaml
+vi leedogs.yaml
+kubectl create -f leedogs.yaml
+cd ..
+ls
+vi kube_notes
+ls
+cd yaml
+ls
+vi leedogs.yaml
+cd ..
+ls
+rm leedogs.yaml
+ls -latr
+git add ./yaml/leedogs.yaml
+git commit
+which vi 
+ls
+ls -la
+cd 
+ls
+cd .git
+ls
+ls -altr
+cd ..
+ls
+git config --global core.editor "/usr/bin/vi
+git config --global core.editor "/usr/bin/vi"
+ls -latr
+git commit
+git config --global user.name "Lee Pierce"
+git config --global user.email leefrankpierce@hotmail.com
+git push origin 
+git login
+git push origin 
+ls
+vi kube_notes
+git commit
+ls
+ls yaml
+ls
+vi kube*
+git commit -m "foo"
+ls
+ls -latr
+date
+vi kube_notes
+git commit -m "foo"
+get rm --cached kube_notes
+git rm --cached kube_notes
+get reset kube_notes
+git reset kube_notes
+ls
+git commit -m "foo"
+ls
+ls -latr
+ls -latr .git
+git update-index --really-refresh
+git commit -m "foo"
+git stage kube_notes
+git commit -m "foo"
+git push origin 
+ls
+cat monitor.bash
+apt-get -y git
+apt-get -y install git
+pwd
+ls
+git init
+git add .
+git commit -m "stuff" 
+git branch -M main
+git remote add origin https://github.com/leefrankpierce/homekube.git
+git push -u origion main
+git push -u origin main
+ls
+vi gittoken
